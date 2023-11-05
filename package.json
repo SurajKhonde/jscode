@@ -1,0 +1,40 @@
+{
+  "homepage": "https://github.com/SurajKhonde/jscode.git",
+  "name": "codepen",
+  "version": "1.0.0",
+  "description": "this codepen clone",
+  "scripts": {
+    "predeploy": "rd /s /q dist && parcel build index.html --public-url  https://surajkhonde.github.io/jscode/",
+    "deploy": "gh-pages -d dist",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "SurajKhonde",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.15",
+    "@mui/material": "^5.14.15",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.3",
+    "codemirror": "^5.65.15",
+    "gh-pages": "^6.0.0",
+    "parcel": "^2.10.2",
+    "react": "^18.2.0",
+    "react-codemirror": "^1.0.0",
+    "react-codemirror2": "^7.3.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0",
+    "styled-components": "^6.1.0"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.31",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.5"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}
